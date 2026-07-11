@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-fraunces: "Fraunces", serif;
+  --font-manrope: "Manrope", sans-serif;
+}
+
+* {
+  border-color: #DDD6C7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F4EC;
+  color: #14140F;
+  font-family: var(--font-manrope);
+  position: relative;
+}
+
+/* Subtle grain overlay for the "1k quality" premium paper feel */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-fraunces);
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+::selection {
+  background-color: #234133;
+  color: #F7F4EC;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #DDD6C7 15%, #DDD6C7 85%, transparent);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* number badges used across editorial sections */
+.numeral {
+  font-family: var(--font-fraunces);
+  font-style: italic;
+  color: #8FB39D;
+}
