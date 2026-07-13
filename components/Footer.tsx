@@ -14,11 +14,11 @@ export default function Footer() {
             <div>
               <Link href="/" className="flex items-center">
                 <Image
-                  src="https://res.cloudinary.com/dm4jfxbcs/image/upload/v1783921288/research_connect_pro_y0bg56.jpg"
+                  src="https://res.cloudinary.com/dm4jfxbcs/image/upload/v1783925392/researchconnect_umicos.jpg"
                   alt="Research Connect Pro"
-                  width={140}
-                  height={35}
-                  className="h-9 w-auto brightness-0 invert"
+                  width={200}
+                  height={56}
+                  className="h-14 w-auto brightness-0 invert"
                 />
               </Link>
               <p className="mt-4 text-xs text-white/70 leading-relaxed max-w-[24ch]">
