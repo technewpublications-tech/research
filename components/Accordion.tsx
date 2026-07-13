@@ -19,7 +19,7 @@ export default function Accordion({ items }: { items: { q: string; a: string }[]
               <span className="font-display text-lg md:text-xl text-ink">{item.q}</span>
               <Plus
                 size={20}
-                className={`shrink-0 text-moss-600 transition-transform duration-300 ${
+                className={`shrink-0 text-brand-teal transition-transform duration-300 ${
                   isOpen ? "rotate-45" : ""
                 }`}
               />

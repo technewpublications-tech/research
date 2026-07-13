@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     const resend = new Resend(apiKey);
 
     await resend.emails.send({
-      from: process.env.CONTACT_FROM_EMAIL || "Researcher Connect Pro <onboarding@resend.dev>",
+      from: process.env.CONTACT_FROM_EMAIL || "Research Connect Pro <onboarding@resend.dev>",
       to: process.env.CONTACT_TO_EMAIL || site.email,
       replyTo: email,
       subject: `New enquiry: ${service || "General"} — ${name}`,

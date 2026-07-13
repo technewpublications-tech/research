@@ -9,7 +9,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Researcher Connect Pro — we typically reply within one business day.",
+  description: "Get in touch with Research Connect Pro — we typically reply within one business day.",
 };
 
 export default function ContactPage() {
@@ -42,7 +42,7 @@ export default function ContactPage() {
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                   <Image
                     src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?auto=format&fit=crop&w=1200&q=80"
-                    alt="The Researcher Connect Pro team collaborating in a modern office"
+                    alt="The Research Connect Pro team collaborating in a modern office"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 40vw"
@@ -87,7 +87,7 @@ function ContactRow({
 }) {
   const content = (
     <div className="flex items-start gap-4">
-      <div className="p-2.5 rounded-full bg-moss-50 text-moss-700">
+      <div className="p-2.5 rounded-full bg-moss-50 text-brand-teal">
         <Icon size={18} />
       </div>
       <div>

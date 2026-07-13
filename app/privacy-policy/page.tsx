@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Researcher Connect Pro collects, uses, and protects your information.",
+  description: "How Research Connect Pro collects, uses, and protects your information.",
 };
 
 const sections = [
@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
             <div className="pt-6 border-t border-line">
               <p className="text-ink-soft leading-relaxed">
                 Questions about this policy? Reach us at{" "}
-                <a href={`mailto:${site.email}`} className="text-moss-700 underline underline-offset-4">
+                <a href={`mailto:${site.email}`} className="text-brand-teal underline underline-offset-4">
                   {site.email}
                 </a>
                 .

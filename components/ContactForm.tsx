@@ -44,15 +44,15 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="flex flex-col items-start gap-3 rounded-2xl border border-moss-300 bg-moss-50 p-8">
-        <CheckCircle2 className="text-moss-600" size={28} />
+      <div className="flex flex-col items-start gap-3 rounded-2xl border border-brand-teal bg-moss-50 p-8">
+        <CheckCircle2 className="text-brand-teal" size={28} />
         <h3 className="font-display text-xl">Message sent.</h3>
         <p className="text-ink-soft">
           Thank you for reaching out — our team will get back to you within one business day.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="text-sm underline underline-offset-4 text-moss-700 mt-2"
+          className="text-sm underline underline-offset-4 text-brand-teal mt-2"
         >
           Send another message
         </button>
@@ -75,7 +75,7 @@ export default function ContactForm() {
           id="service"
           name="service"
           required
-          className="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none focus:border-moss-500 transition-colors"
+          className="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none focus:border-brand-teal transition-colors"
           defaultValue=""
         >
           <option value="" disabled>Select a service</option>
@@ -99,7 +99,7 @@ export default function ContactForm() {
           required
           rows={5}
           placeholder="Tell us a little about what you're working on."
-          className="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none focus:border-moss-500 transition-colors resize-none"
+          className="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none focus:border-brand-teal transition-colors resize-none"
         />
       </div>
 
@@ -113,7 +113,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex items-center justify-center gap-2 rounded-full bg-ink text-paper px-8 py-3.5 font-medium hover:bg-moss-700 transition-colors disabled:opacity-60 mt-2 w-fit"
+        className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold text-white px-8 py-3.5 font-medium hover:bg-brand-gold-hover transition-colors disabled:opacity-60 mt-2 w-fit"
       >
         {status === "loading" && <Loader2 size={16} className="animate-spin" />}
         {status === "loading" ? "Sending..." : "Send message"}
@@ -146,7 +146,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none focus:border-moss-500 transition-colors"
+        className="w-full rounded-lg border border-line bg-paper px-4 py-3 text-ink outline-none focus:border-brand-teal transition-colors"
       />
     </div>
   );

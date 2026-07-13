@@ -14,7 +14,7 @@ export default function ServiceTemplate({ service }: { service: Service }) {
       <section className="pt-16 md:pt-24 pb-16 md:pb-20">
         <Container>
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-moss-600 mb-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-teal mb-6">
               {service.shortTitle}
             </p>
           </Reveal>
@@ -60,7 +60,7 @@ export default function ServiceTemplate({ service }: { service: Service }) {
               {service.points.map((point, i) => (
                 <Reveal key={point} delay={i * 60}>
                   <div className="flex gap-3">
-                    <CheckCircle2 size={20} className="text-moss-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 size={20} className="text-brand-teal shrink-0 mt-0.5" />
                     <p className="text-ink-soft leading-relaxed">{point}</p>
                   </div>
                 </Reveal>

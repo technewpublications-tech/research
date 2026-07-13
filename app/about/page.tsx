@@ -7,7 +7,7 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn more about Researcher Connect Pro, our mission, and the team supporting your research journey.",
+  description: "Learn more about Research Connect Pro, our mission, and the team supporting your research journey.",
 };
 
 const team = [
@@ -37,7 +37,7 @@ export default function AboutPage() {
       <section className="pt-16 md:pt-24 pb-16">
         <Container>
           <Reveal>
-            <SectionLabel text="About Researcher Connect Pro" />
+            <SectionLabel text="About Research Connect Pro" />
           </Reveal>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-7">
@@ -51,7 +51,7 @@ export default function AboutPage() {
                   We believe that researchers should spend their time making breakthroughs, not getting bogged down in formatting rules, event logistics, or digital dashboards.
                 </p>
                 <p className="mt-4 text-base text-ink-soft/80 leading-relaxed max-w-xl">
-                  Researcher Connect Pro was founded to build a dedicated support layer for academia. Our specialists bring together decades of collective experience in journal requirements, technical project organization, and custom developer solutions.
+                  Research Connect Pro was founded to build a dedicated support layer for academia. Our specialists bring together decades of collective experience in journal requirements, technical project organization, and custom developer solutions.
                 </p>
               </Reveal>
             </div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-line shadow-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                    alt="The Researcher Connect Pro team collaborating in a modern workspace"
+                    alt="The Research Connect Pro team collaborating in a modern workspace"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 40vw"
@@ -123,7 +123,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h4 className="font-display text-xl text-ink font-semibold mb-1">{member.name}</h4>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-moss-600 mb-4">{member.role}</p>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-brand-teal mb-4">{member.role}</p>
                     <p className="text-xs md:text-sm text-ink-soft leading-relaxed">{member.bio}</p>
                   </div>
                 </div>

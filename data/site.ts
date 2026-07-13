@@ -2,18 +2,18 @@
 // below whenever the real ones are ready — nothing else needs to change.
 
 export const site = {
-  name: "Researcher Connect Pro",
-  domain: "researcherconnectpro.com",
+  name: "Research Connect Pro",
+  domain: "researchconnectpro.com",
   tagline: "Research support services, end to end.",
-  email: "info@researcherconnectpro.com",
-  phone: "+00 000 000 0000",
-  phoneDisplay: "+00 000 000 0000",
-  whatsapp: "https://wa.me/000000000000",
+  email: "researchconnectpro@gmail.com",
+  phone: "+917708641046",
+  phoneDisplay: "+91 77086 41046",
+  whatsapp: "https://wa.me/917708641046",
   address: "Nagpur, Maharashtra, India",
   social: {
     linkedin: "https://www.linkedin.com/company/researcher-connect-pro/",
     instagram: "https://www.instagram.com/researcher_connect_pro",
-    facebook: "https://www.facebook.com/",
+    facebook: "https://www.facebook.com/profile.php?id=61591660671189",
   },
 };
 

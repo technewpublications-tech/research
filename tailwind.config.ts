@@ -12,21 +12,29 @@ const config: Config = {
     },
     extend: {
       colors: {
-        paper: "#F7F4EC",
-        "paper-dim": "#EFEAE0",
-        ink: "#14140F",
-        "ink-soft": "#3C3B34",
+        /* ── Brand tokens (reference CSS vars for easy future tweaks) ── */
+        "brand-navy": "var(--brand-navy)",
+        "brand-teal": "var(--brand-teal)",
+        "brand-gold": "var(--brand-gold)",
+        "brand-gold-hover": "var(--brand-gold-hover)",
+
+        /* ── Semantic aliases (backward-compatible with existing classes) ── */
+        paper: "#FFFFFF",
+        "paper-dim": "#F0F4F8",
+        ink: "#00173E",
+        "ink-soft": "#1A3A5C",
         moss: {
-          50: "#EEF3EF",
-          100: "#D7E4DA",
-          300: "#8FB39D",
-          500: "#3F6B57",
-          600: "#2F5644",
-          700: "#234133",
-          900: "#152A20",
+          50: "#E8F6F7",
+          100: "#D0EEF0",
+          300: "#4DB8C4",
+          500: "#007A89",
+          600: "#007A89",
+          700: "#006070",
+          800: "#005060",
+          900: "#00173E",
         },
-        clay: "#B5502F",
-        line: "#DDD6C7",
+        clay: "#DC2626",
+        line: "#D4D8DE",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],

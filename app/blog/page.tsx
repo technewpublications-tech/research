@@ -74,13 +74,13 @@ export default function BlogPage() {
                       />
                     </div>
                     {/* Meta */}
-                    <div className="flex items-center gap-3 text-xs text-moss-700 font-semibold uppercase tracking-wider mb-3">
+                    <div className="flex items-center gap-3 text-xs text-brand-teal font-semibold uppercase tracking-wider mb-3">
                       <span>{post.category}</span>
-                      <span className="w-1.5 h-1.5 rounded-full bg-moss-300" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-teal" />
                       <span className="text-ink-soft/60 font-medium normal-case tracking-normal">{post.readTime}</span>
                     </div>
                     {/* Header */}
-                    <h3 className="font-display text-xl text-ink font-semibold group-hover:text-moss-700 transition-colors leading-snug mb-3">
+                    <h3 className="font-display text-xl text-ink font-semibold group-hover:text-brand-teal transition-colors leading-snug mb-3">
                       {post.title}
                     </h3>
                     {/* Excerpt */}
@@ -91,7 +91,7 @@ export default function BlogPage() {
                   {/* Footer link */}
                   <div className="flex items-center justify-between mt-auto border-t border-line/40 pt-4">
                     <span className="text-xs text-ink-soft/50">{post.date}</span>
-                    <span className="text-xs font-semibold text-moss-700 group-hover:translate-x-1 transition-transform">
+                    <span className="text-xs font-semibold text-brand-teal group-hover:translate-x-1 transition-transform">
                       Read Article →
                     </span>
                   </div>

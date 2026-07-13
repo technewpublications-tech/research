@@ -23,9 +23,9 @@ export default function Button({
 
   const variants: Record<string, string> = {
     primary:
-      "bg-ink text-paper hover:bg-moss-700 hover:-translate-y-0.5 shadow-[0_1px_0_rgba(0,0,0,0.05)]",
+      "bg-brand-gold text-white hover:bg-brand-gold-hover hover:-translate-y-0.5 shadow-[0_1px_0_rgba(0,0,0,0.05)]",
     secondary:
-      "bg-transparent text-ink border border-ink/25 hover:border-ink hover:-translate-y-0.5",
+      "bg-transparent text-ink border border-ink/25 hover:bg-brand-teal hover:text-white hover:border-brand-teal hover:-translate-y-0.5",
     ghost: "bg-transparent text-ink underline-offset-4 hover:underline px-0 py-0",
   };
 

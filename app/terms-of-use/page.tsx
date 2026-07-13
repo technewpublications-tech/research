@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "The terms that govern use of the Researcher Connect Pro website and services.",
+  description: "The terms that govern use of the Research Connect Pro website and services.",
 };
 
 const sections = [
@@ -24,7 +24,7 @@ const sections = [
   },
   {
     title: "Intellectual property",
-    body: "Your research, data, and intellectual property remain yours. Content on this website — text, design, and images — belongs to Researcher Connect Pro and should not be reproduced without permission.",
+    body: "Your research, data, and intellectual property remain yours. Content on this website — text, design, and images — belongs to Research Connect Pro and should not be reproduced without permission.",
   },
   {
     title: "Confidentiality",
@@ -68,7 +68,7 @@ export default function TermsPage() {
             <div className="pt-6 border-t border-line">
               <p className="text-ink-soft leading-relaxed">
                 Questions about these terms? Reach us at{" "}
-                <a href={`mailto:${site.email}`} className="text-moss-700 underline underline-offset-4">
+                <a href={`mailto:${site.email}`} className="text-brand-teal underline underline-offset-4">
                   {site.email}
                 </a>
                 .

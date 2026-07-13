@@ -74,7 +74,7 @@ export default function TemplatesPage() {
                     <span className="text-xs text-ink-soft/50 font-medium">
                       {template.format} • {template.size}
                     </span>
-                    <button className="text-xs font-semibold text-moss-700 hover:underline">
+                    <button className="text-xs font-semibold text-brand-teal hover:underline">
                       Download File →
                     </button>
                   </div>

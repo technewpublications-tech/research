@@ -5,10 +5,17 @@
 :root {
   --font-fraunces: "Fraunces", serif;
   --font-manrope: "Manrope", sans-serif;
+
+  /* ── Brand palette (single source of truth) ── */
+  --brand-navy: #00173E;
+  --brand-teal: #007A89;
+  --brand-gold: #CF8B00;
+  --brand-gold-hover: #B87A00;
+  --brand-white: #FFFFFF;
 }
 
 * {
-  border-color: #DDD6C7;
+  border-color: #D4D8DE;
 }
 
 html {
@@ -16,13 +23,13 @@ html {
 }
 
 body {
-  background-color: #F7F4EC;
-  color: #14140F;
+  background-color: var(--brand-white);
+  color: var(--brand-navy);
   font-family: var(--font-manrope);
   position: relative;
 }
 
-/* Subtle grain overlay for the "1k quality" premium paper feel */
+/* Subtle grain overlay for the premium feel */
 body::before {
   content: "";
   position: fixed;
@@ -41,8 +48,8 @@ h1, h2, h3, h4 {
 }
 
 ::selection {
-  background-color: #234133;
-  color: #F7F4EC;
+  background-color: var(--brand-navy);
+  color: var(--brand-white);
 }
 
 .reveal {
@@ -55,7 +62,7 @@ h1, h2, h3, h4 {
 
 .hairline {
   height: 1px;
-  background: linear-gradient(to right, transparent, #DDD6C7 15%, #DDD6C7 85%, transparent);
+  background: linear-gradient(to right, transparent, #D4D8DE 15%, #D4D8DE 85%, transparent);
 }
 
 .text-balance {
@@ -77,5 +84,5 @@ h1, h2, h3, h4 {
 .numeral {
   font-family: var(--font-fraunces);
   font-style: italic;
-  color: #8FB39D;
+  color: var(--brand-gold);
 }

@@ -7,12 +7,12 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Answers to common questions about working with Researcher Connect Pro.",
+  description: "Answers to common questions about working with Research Connect Pro.",
 };
 
 const generalFaqs = [
   {
-    q: "What exactly does Researcher Connect Pro do?",
+    q: "What exactly does Research Connect Pro do?",
     a: "We handle the research-adjacent work that takes time away from the research itself — editorial solutions, conference management, visibility & impact, manuscript preparation, author support, and project planning.",
   },
   {

@@ -26,7 +26,7 @@ import Container from "@/components/Container";
 import Reveal from "@/components/Reveal";
 import Button from "@/components/Button";
 import ServiceCard from "@/components/ServiceCard";
-import { services, stats } from "@/data/site";
+import { services, stats, site } from "@/data/site";
 
 export default function HomePage() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -77,21 +77,21 @@ export default function HomePage() {
       <section className="relative pt-12 md:pt-20 pb-16 md:pb-24 overflow-hidden">
         <div
           className="absolute -top-40 right-[-10%] w-[600px] h-[600px] rounded-full opacity-40 blur-3xl pointer-events-none"
-          style={{ background: "radial-gradient(circle, #D7E4DA 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #D0EEF0 0%, transparent 70%)" }}
         />
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Text Content */}
             <div className="lg:col-span-7 z-10">
               <Reveal>
-                <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-moss-600 mb-5">
+                <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-brand-teal mb-5">
                   RESEARCH SUPPORT THAT DRIVES IMPACT
                 </p>
               </Reveal>
               <Reveal delay={80}>
                 <h1 className="font-display text-[2.6rem] leading-[1.05] sm:text-6xl md:text-7xl text-ink text-balance">
                   Research support that goes{" "}
-                  <span className="text-moss-600 italic font-medium">further</span> than a to-do
+                  <span className="text-brand-teal italic font-medium">further</span> than a to-do
                   list.
                 </h1>
               </Reveal>
@@ -103,10 +103,10 @@ export default function HomePage() {
               </Reveal>
               <Reveal delay={240}>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
-                  <Button href="#services" className="!bg-moss-900 hover:!bg-moss-800 !text-paper">
+                  <Button href="#services" className="!bg-brand-gold hover:!bg-brand-gold-hover !text-white">
                     Explore Services
                   </Button>
-                  <Button href="/contact-us" variant="secondary" className="border-ink/20 hover:border-ink">
+                  <Button href="/contact-us" variant="secondary" className="border-ink/20 hover:bg-brand-teal hover:text-white hover:border-brand-teal">
                     Let's Talk
                   </Button>
                 </div>
@@ -127,7 +127,7 @@ export default function HomePage() {
                   />
                   {/* Subtle decorative overlay badge */}
                   <div className="absolute bottom-6 right-6 bg-paper/95 backdrop-blur-sm border border-line py-3 px-5 rounded-2xl shadow-lg">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-moss-700">Research. Elevated.</p>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-brand-teal">Research. Elevated.</p>
                   </div>
                 </div>
               </Reveal>
@@ -148,11 +148,11 @@ export default function HomePage() {
             ].map((stat, i) => (
               <Reveal key={stat.label} delay={i * 80}>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-moss-50 flex items-center justify-center text-moss-600 shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-moss-50 flex items-center justify-center text-brand-teal shrink-0">
                     <stat.icon size={18} strokeWidth={1.5} />
                   </div>
                   <div>
-                    <p className="font-display text-2xl md:text-3xl text-ink font-semibold leading-none">
+                    <p className="font-display text-2xl md:text-3xl text-brand-gold font-semibold leading-none">
                       {stat.value}
                     </p>
                     <p className="text-xs md:text-sm text-ink-soft/80 mt-1 font-medium">
@@ -170,12 +170,12 @@ export default function HomePage() {
       <section id="services" className="py-20 md:py-28 scroll-mt-20">
         <Container>
           <Reveal className="text-center mb-16">
-            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-moss-600 mb-4">
+            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-brand-teal mb-4">
               WHAT WE DO
             </p>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl max-w-3xl mx-auto text-balance text-ink font-medium leading-[1.15]">
               Six services. One team that speaks the{" "}
-              <span className="text-moss-600 italic font-medium">language of research.</span>
+              <span className="text-brand-teal italic font-medium">language of research.</span>
             </h2>
           </Reveal>
 
@@ -192,12 +192,12 @@ export default function HomePage() {
       {/* Conference Spotlight Section */}
       <section className="py-12 md:py-16 bg-paper-dim/40">
         <Container>
-          <div className="bg-moss-900 text-paper rounded-[3rem] p-8 md:p-14 lg:p-16 overflow-hidden relative shadow-xl">
+          <div className="bg-moss-900 text-white rounded-[3rem] p-8 md:p-14 lg:p-16 overflow-hidden relative shadow-xl">
             <div
               className="absolute inset-0 opacity-[0.03]"
               style={{
                 backgroundImage:
-                  "radial-gradient(circle at 20% 20%, #F7F4EC 1px, transparent 1px)",
+                  "radial-gradient(circle at 20% 20%, #FFFFFF 1px, transparent 1px)",
                 backgroundSize: "24px 24px",
               }}
             />
@@ -205,19 +205,19 @@ export default function HomePage() {
               {/* Left text */}
               <div className="lg:col-span-5">
                 <Reveal>
-                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-moss-300 mb-4">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-teal mb-4">
                     CONFERENCE SUPPORT
                   </p>
                   <h3 className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-5 text-balance">
                     Bringing a conference to life — seamlessly.
                   </h3>
-                  <p className="text-paper/75 text-sm md:text-base leading-relaxed mb-8 max-w-[42ch]">
+                  <p className="text-white/75 text-sm md:text-base leading-relaxed mb-8 max-w-[42ch]">
                     We manage the details so your event runs smoothly, from planning to promotion,
                     logistics to follow-ups.
                   </p>
                   <Button
                     href="/services/conference-management"
-                    className="!bg-[#F7F4EC] hover:!bg-[#EEF3EF] !text-moss-900"
+                    className="!bg-brand-gold hover:!bg-brand-gold-hover !text-white"
                   >
                     See how we can help
                   </Button>
@@ -227,10 +227,10 @@ export default function HomePage() {
               {/* Right image + badges */}
               <div className="lg:col-span-7 flex flex-col gap-6">
                 <Reveal delay={150}>
-                  <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-paper/10 shadow-lg">
+                  <div className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-white/10 shadow-lg">
                     <Image
                       src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80"
-                      alt="Grand conference auditorium presenting Researcher Connect Pro conference software solutions"
+                      alt="Grand conference auditorium presenting Research Connect Pro conference software solutions"
                       fill
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
@@ -246,8 +246,8 @@ export default function HomePage() {
                     { label: "Logistics & coordination", icon: Calendar },
                   ].map((badge, idx) => (
                     <Reveal key={badge.label} delay={200 + idx * 50}>
-                      <div className="flex items-center gap-2 rounded-full bg-paper/10 border border-paper/10 px-4 py-2 text-xs md:text-sm font-medium text-paper/90 backdrop-blur-sm">
-                        <badge.icon size={14} className="text-moss-300" />
+                      <div className="flex items-center gap-2 rounded-full bg-white/10 border border-white/10 px-4 py-2 text-xs md:text-sm font-medium text-white/90 backdrop-blur-sm">
+                        <badge.icon size={14} className="text-brand-teal" />
                         {badge.label}
                       </div>
                     </Reveal>
@@ -266,12 +266,12 @@ export default function HomePage() {
             {/* Left Content */}
             <div className="lg:col-span-7">
               <Reveal>
-                <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-moss-600 mb-4">
+                <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-brand-teal mb-4">
                   WHY IT MATTERS
                 </p>
                 <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-14 text-balance text-ink font-medium leading-[1.15]">
                   If research is part of your work, there's probably{" "}
-                  <span className="text-moss-600 italic font-medium">a fit here.</span>
+                  <span className="text-brand-teal italic font-medium">a fit here.</span>
                 </h2>
               </Reveal>
 
@@ -300,7 +300,7 @@ export default function HomePage() {
                 ].map((item, idx) => (
                   <Reveal key={item.title} delay={idx * 60}>
                     <div className="flex gap-4">
-                      <div className="w-9 h-9 rounded-full bg-[#EEF3EF] flex items-center justify-center text-moss-700 shrink-0">
+                      <div className="w-9 h-9 rounded-full bg-moss-50 flex items-center justify-center text-brand-teal shrink-0">
                         <item.icon size={16} strokeWidth={1.5} />
                       </div>
                       <div>
@@ -340,25 +340,25 @@ export default function HomePage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             {/* Left quotation box */}
-            <div className="lg:col-span-4 bg-moss-900 text-paper p-8 md:p-12 rounded-[2.5rem] flex flex-col justify-between shadow-lg relative min-h-[300px]">
+            <div className="lg:col-span-4 bg-moss-900 text-white p-8 md:p-12 rounded-[2.5rem] flex flex-col justify-between shadow-lg relative min-h-[300px]">
               <div
                 className="absolute inset-0 opacity-[0.03]"
                 style={{
                   backgroundImage:
-                    "radial-gradient(circle at 10% 10%, #F7F4EC 1px, transparent 1px)",
+                    "radial-gradient(circle at 10% 10%, #FFFFFF 1px, transparent 1px)",
                   backgroundSize: "20px 20px",
                 }}
               />
               <Reveal className="relative z-10 h-full flex flex-col justify-between">
                 <div>
-                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-moss-300 mb-6">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-brand-teal mb-6">
                     TRUSTED BY RESEARCHERS FOR
                   </p>
                   <h3 className="font-display text-2xl md:text-3xl leading-[1.2] text-balance">
                     Straightforward, and based on real timelines.
                   </h3>
                 </div>
-                <div className="font-display text-7xl text-moss-500/30 leading-none select-none text-right">
+                <div className="font-display text-7xl text-brand-teal/30 leading-none select-none text-right">
                   “
                 </div>
               </Reveal>
@@ -386,7 +386,7 @@ export default function HomePage() {
               ].map((card, idx) => (
                 <Reveal key={idx} delay={idx * 60} className="h-full">
                   <div className="bg-paper border border-line rounded-3xl p-6 flex flex-col gap-6 h-full justify-between hover:border-moss-300 transition-all duration-300 hover:shadow-sm">
-                    <div className="w-9 h-9 rounded-full bg-moss-50 flex items-center justify-center text-moss-600">
+                    <div className="w-9 h-9 rounded-full bg-moss-50 flex items-center justify-center text-brand-teal">
                       <card.icon size={16} strokeWidth={1.5} />
                     </div>
                     <p className="text-xs md:text-sm font-medium text-ink-soft leading-relaxed">
@@ -405,11 +405,11 @@ export default function HomePage() {
         <Container>
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <Reveal>
-              <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-moss-600 mb-4">
+              <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-brand-teal mb-4">
                 RECENT WORK
               </p>
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-ink font-medium leading-[1.15]">
-                Different research. <span className="text-moss-600 italic font-medium">Same commitment.</span>
+                Different research. <span className="text-brand-teal italic font-medium">Same commitment.</span>
               </h2>
             </Reveal>
             
@@ -467,12 +467,12 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action Let's Talk Section */}
-      <section className="py-20 md:py-24 bg-[#14140F] text-paper relative overflow-hidden">
+      <section className="py-20 md:py-24 bg-ink text-white relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 30% 30%, #F7F4EC 1px, transparent 1px)",
+              "radial-gradient(circle at 30% 30%, #FFFFFF 1px, transparent 1px)",
             backgroundSize: "28px 28px",
           }}
         />
@@ -484,22 +484,27 @@ export default function HomePage() {
                 <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.1] mb-4 text-balance">
                   Let's talk about your research.
                 </h2>
-                <p className="text-paper/70 text-base md:text-lg mb-10 max-w-[45ch]">
+                <p className="text-white/70 text-base md:text-lg mb-10 max-w-[45ch]">
                   Tell us your goals. We'll take care of the rest.
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <Button
-                    href="/contact-us"
-                    className="!bg-[#F7F4EC] hover:!bg-[#EEF3EF] !text-moss-900"
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href={site.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-brand-gold hover:bg-brand-gold-hover text-white rounded-full px-6 py-3 font-semibold text-sm transition-colors inline-flex items-center gap-2 shadow-sm"
                   >
-                    Schedule a Call
-                  </Button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    <span>Chat on WhatsApp</span>
+                  </a>
                   <Button
                     href="/contact-us"
                     variant="secondary"
-                    className="!border-paper/20 !text-paper hover:!border-paper hover:!bg-paper/5"
+                    className="!border-white/20 !text-white hover:!border-brand-teal hover:!bg-brand-teal"
                   >
-                    Send a Message
+                    Schedule a Call
                   </Button>
                 </div>
               </Reveal>
@@ -508,7 +513,7 @@ export default function HomePage() {
             {/* Right side flatlay mockup */}
             <div className="lg:col-span-5 relative mt-6 lg:mt-0">
               <Reveal delay={150}>
-                <div className="relative aspect-[16/10] sm:aspect-[1.5] rounded-3xl overflow-hidden border border-paper/10 shadow-2xl">
+                <div className="relative aspect-[16/10] sm:aspect-[1.5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                   <Image
                     src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80"
                     alt="Close up desk calendar planner showing project schedules"
@@ -517,8 +522,8 @@ export default function HomePage() {
                     sizes="(max-width: 1024px) 100vw, 40vw"
                   />
                   {/* Branding tag */}
-                  <div className="absolute top-4 left-4 bg-ink/75 backdrop-blur-sm border border-paper/10 py-1.5 px-3 rounded-xl shadow-md">
-                    <p className="text-[10px] font-bold uppercase tracking-wider text-moss-300">Researcher Connect Pro</p>
+                  <div className="absolute top-4 left-4 bg-ink/75 backdrop-blur-sm border border-white/10 py-1.5 px-3 rounded-xl shadow-md">
+                    <p className="text-[10px] font-bold uppercase tracking-wider text-brand-teal">Research Connect Pro</p>
                   </div>
                 </div>
               </Reveal>

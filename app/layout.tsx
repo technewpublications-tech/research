@@ -21,13 +21,13 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${site.domain}`),
   title: {
-    default: "Researcher Connect Pro — Complete Research Support",
-    template: "%s — Researcher Connect Pro",
+    default: "Research Connect Pro — Complete Research Support",
+    template: "%s — Research Connect Pro",
   },
   description:
-    "Researcher Connect Pro supports scholars and professionals end to end — editorial solutions, conferences, visibility, manuscript preparation, author support, and project planning.",
+    "Research Connect Pro supports scholars and professionals end to end — editorial solutions, conferences, visibility, manuscript preparation, author support, and project planning.",
   openGraph: {
-    title: "Researcher Connect Pro — Complete Research Support",
+    title: "Research Connect Pro — Complete Research Support",
     description:
       "From manuscript to conference, planning to presentation — one team for the whole research journey.",
     url: `https://${site.domain}`,
