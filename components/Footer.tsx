@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin, Instagram, Facebook, Mail } from "lucide-react";
+import { Facebook, Mail } from "lucide-react";
 import Container from "./Container";
 import { services, site } from "@/data/site";
 
@@ -35,24 +35,7 @@ export default function Footer() {
               >
                 <Mail size={16} />
               </a>
-              <a
-                href={site.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="text-white/70 hover:text-white transition-colors"
-              >
-                <Linkedin size={16} />
-              </a>
-              <a
-                href={site.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-white/70 hover:text-white transition-colors"
-              >
-                <Instagram size={16} />
-              </a>
+
               <a
                 href={site.social.facebook}
                 target="_blank"
