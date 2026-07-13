@@ -18,7 +18,7 @@ export default function Footer() {
                   alt="Research Connect Pro"
                   width={200}
                   height={56}
-                  className="h-14 w-auto brightness-0 invert"
+                  className="h-14 w-auto rounded"
                 />
               </Link>
               <p className="mt-4 text-xs text-white/70 leading-relaxed max-w-[24ch]">
