@@ -9,7 +9,7 @@ export const site = {
   phone: "+917708641046",
   phoneDisplay: "+91 77086 41046",
   whatsapp: "https://wa.me/917708641046",
-  address: "Nagpur, Maharashtra, India",
+  address: "Coimbatore, India",
   social: {
     linkedin: "https://www.linkedin.com/company/researcher-connect-pro/",
     instagram: "https://www.instagram.com/researcher_connect_pro",
